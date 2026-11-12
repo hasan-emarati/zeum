@@ -1,0 +1,17 @@
+# نور کرم شب‌تاب: LED. سقف duty رفلکس بدن است و موجود نمی‌تواند آن را بالاتر ببرد.
+[organ]
+id = "led"
+kind = "actuator"
+range = [0, 255]
+
+[hardware]
+part = "LED + 330R"
+bus = "pwm"
+note = "under 10 mA"
+
+[reflex]
+none = false
+max_duty = 128
+
+[vocabulary]
+words = ["led-on", "led-off", "led-level", "blink"]

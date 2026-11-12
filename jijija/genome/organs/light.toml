@@ -1,0 +1,18 @@
+# چشم: LDR روی ADC (بازسازی‌شده؛ نسخه قبلی این فایل بازنویسی و از دست رفت)
+[organ]
+id = "light"
+kind = "sensor"
+unit = "adc_count"
+range = [0, 4095]
+rate_hz = 100
+
+[hardware]
+part = "LDR 5mm + 10k divider"
+bus = "adc"
+note = "reference sensor: BH1750 (logger only)"
+
+[reflex]
+none = true
+
+[vocabulary]
+words = ["read-light", "light-avg", "light-delta"]

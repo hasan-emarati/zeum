@@ -1,0 +1,19 @@
+# شنوایی: انرژی ۸ باند فرکانسی (مثل گوش حشره که روی فرکانس مشخص تنظیم است، نه صدای کامل)
+[organ]
+id = "hearing"
+kind = "sensor"
+unit = "band_energy"
+range = [0, 32767]
+rate_hz = 100
+channels = 8
+
+[hardware]
+part = "KY-037 x3 (electret + LM393)"
+bus = "adc"
+note = "Goertzel/filter bank on-device; band centres TBD after first data"
+
+[reflex]
+none = true
+
+[vocabulary]
+words = ["hear-band", "hear-loud?", "hear-pitch"]

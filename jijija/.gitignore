@@ -1,0 +1,7 @@
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/MANIFEST.md
+.pio/
+__pycache__/
+firmware/logger/src/secrets.h
+firmware/creature/build/

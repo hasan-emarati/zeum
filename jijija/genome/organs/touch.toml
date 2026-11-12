@@ -1,0 +1,19 @@
+# لمس و تکان: MPU6050، ۶ کانال خام (ax ay az gx gy gz)
+[organ]
+id = "touch"
+kind = "sensor"
+unit = "mpu6050_raw_int16"
+range = [-32768, 32767]
+rate_hz = 200
+channels = 6
+
+[hardware]
+part = "MPU6050 (GY-521, may be a clone)"
+bus = "i2c"
+note = "log WHO_AM_I at first boot"
+
+[reflex]
+none = true
+
+[vocabulary]
+words = ["read-accel", "read-gyro", "shock?", "still?"]

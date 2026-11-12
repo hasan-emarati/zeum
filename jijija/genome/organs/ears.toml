@@ -1,0 +1,19 @@
+# سه گوش: سطح هر کانال برای جهت‌یابی
+[organ]
+id = "ears"
+kind = "sensor"
+unit = "adc_level"
+range = [0, 4095]
+rate_hz = 100
+channels = 3
+
+[hardware]
+part = "KY-037 analog outs (L, C, R)"
+bus = "adc"
+note = "digital comparator outs are a hardware startle reflex candidate"
+
+[reflex]
+none = true
+
+[vocabulary]
+words = ["ear-left", "ear-right", "turn-to-sound"]

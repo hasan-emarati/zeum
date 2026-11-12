@@ -1,0 +1,19 @@
+# حس گرما: DHT11. دو کانال: دما و رطوبت، هر دو x10. خطای خواندن با flag ثبت می‌شود.
+[organ]
+id = "thermo"
+kind = "sensor"
+unit = "dht11_x10"
+range = [0, 1000]
+rate_hz = 1
+channels = 2
+
+[hardware]
+part = "DHT11"
+bus = "gpio"
+note = "max 1 Hz; timeouts and checksum errors are real behaviour"
+
+[reflex]
+none = true
+
+[vocabulary]
+words = ["read-temp", "temp-trend", "read-humidity"]

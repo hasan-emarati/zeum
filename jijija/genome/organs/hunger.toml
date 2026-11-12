@@ -1,0 +1,18 @@
+# گرسنگی: ولتاژ باتری از مقسم روی ADC
+[organ]
+id = "hunger"
+kind = "internal"
+unit = "adc_count"
+range = [0, 4095]
+rate_hz = 1
+
+[hardware]
+part = "2x100k divider on battery"
+bus = "adc"
+note = "ADC1 only; calibrate with a multimeter"
+
+[reflex]
+none = true
+
+[vocabulary]
+words = ["hungry?", "energy-level"]

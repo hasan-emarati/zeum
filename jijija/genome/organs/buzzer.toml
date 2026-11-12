@@ -1,0 +1,18 @@
+# صدا: بازر پیزوی غیرفعال. min_off_ms مانع بوق ممتد می‌شود.
+[organ]
+id = "buzzer"
+kind = "actuator"
+range = [0, 255]
+
+[hardware]
+part = "passive piezo buzzer"
+bus = "pwm"
+note = "an active buzzer cannot do pitch"
+
+[reflex]
+none = false
+max_duty = 128
+min_off_ms = 20
+
+[vocabulary]
+words = ["beep", "chirp", "silence"]
